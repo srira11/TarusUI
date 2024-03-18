@@ -3,7 +3,7 @@ document.body.innerHTML += `<div id="tarus"></div>`;
 function tarusCSS() {
     return `<style>
         #tarus{
-            position: absolute;
+            position: fixed;
             bottom: 50px;
             right: 50px;
             z-index: 1000;
