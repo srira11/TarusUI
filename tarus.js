@@ -34,6 +34,7 @@ function tarusCSS() {
             cursor: pointer;
             position: relative;
             z-index: 1001;
+            color: black;
         }
     </style>`;
 }
@@ -54,16 +55,16 @@ tarus.innerHTML += `<div id="tarus-chat-wrapper">
 </div>`;
 
 window.addEventListener('message', (event) => {
-    if(event.data === 'minimize') // @ts-ignore
+    if(event.data === 'minimize')
         document.querySelector('#tarus-frame').style.display = 'none';
 });
 
 let firstClick = true;
 document.querySelector('#tarus-chat-button').addEventListener('click', () => {
     const iframe = document.querySelector('#tarus-frame');
-    if(firstClick === true) { // @ts-ignore
+    if(firstClick === true) {
         iframe.contentWindow.postMessage('initConnection', 'https://srira11.github.io/TarusUI/');
         firstClick = false;
-    } // @ts-ignore
+    }
     iframe.style.display = 'block';
 });
