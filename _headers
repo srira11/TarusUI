@@ -1,0 +1,2 @@
+/*
+    Content-Security-Policy: frame-ancestors 'self' https://use.rently.com https://homes.rently.com
