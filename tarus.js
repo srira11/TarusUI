@@ -44,7 +44,7 @@ function chatButton(){
 }
 
 function tarusFrame() {
-    return `<iframe id="tarus-frame" src="https://srira11.github.io/TarusUI/"></iframe>`;
+    return `<iframe id="tarus-frame" src="https://srira11.github.io/"></iframe>`;
 }
 
 const tarus = document.querySelector('#tarus');
@@ -63,7 +63,7 @@ let firstClick = true;
 document.querySelector('#tarus-chat-button').addEventListener('click', () => {
     const iframe = document.querySelector('#tarus-frame');
     if(firstClick === true) {
-        iframe.contentWindow.postMessage('initConnection', 'https://srira11.github.io/TarusUI/');
+        iframe.contentWindow.postMessage('initConnection', 'https://srira11.github.io/');
         firstClick = false;
     }
     iframe.style.display = 'block';
