@@ -1,4 +1,4 @@
-const HOSTED_URL = "https://main--zingy-ganache-c529c9.netlify.app";
+const HOSTED_URL = "https://srira11.github.io/TarusUI";
 document.body.innerHTML += `<div id="tarus"></div>`;
 
 function tarusCSS() {
