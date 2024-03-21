@@ -1,4 +1,4 @@
-const HOSTED_URL = "https://srira11.github.io/TarusUI";
+const HOSTED_URL = "https://srira11.github.io";
 document.body.innerHTML += `<div id="tarus"></div>`;
 
 function tarusCSS() {
@@ -46,7 +46,7 @@ function chatButton(){
 }
 
 function tarusFrame() {
-    return `<iframe id="tarus-frame" src="${HOSTED_URL}"></iframe>`;
+    return `<iframe id="tarus-frame" src="${HOSTED_URL}/TarusUI"></iframe>`;
 }
 
 const tarus = document.querySelector('#tarus');
