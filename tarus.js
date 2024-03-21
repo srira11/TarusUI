@@ -57,6 +57,7 @@ tarus.innerHTML += `<div id="tarus-chat-wrapper">
 </div>`;
 
 window.addEventListener('message', (event) => {
+    console.log(event.origin);
     if(event.data === 'minimize' && event.origin === HOSTED_URL) {
         document.querySelector('#tarus-frame').style.display = 'none';
         document.querySelector('#tarus-chat-button').style.display = 'block';
